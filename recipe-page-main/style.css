@@ -1,0 +1,175 @@
+@font-face {
+    font-family:young-serif ;
+    font-weight: 400;
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+
+
+@font-face {
+    font-family: outfit-400;
+    src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: outfit-600;
+    src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: outfit-700;
+    src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+    font-weight: 700;
+}
+
+:root{
+
+/* Colors */
+--White: hsl(0, 0%, 100%);
+
+--Stone-100: hsl(30, 54%, 90%);
+--Stone-150: hsl(30, 18%, 87%);
+--Stone-600: hsl(30, 10%, 34%);
+--Stone-900: hsl(24, 5%, 18%);
+
+--Brown-800: hsl(14, 45%, 36%);
+
+--Rose-800: hsl(332, 51%, 32%);
+--Rose-50: hsl(330, 100%, 98%);
+
+font-size: 1rem;
+
+
+}
+
+*{
+    text-wrap: initial;
+}
+
+body{
+    background-color: var(--Rose-50);
+}
+
+section{
+    margin-block: 3rem;
+}
+
+h1{
+    font-family:young-serif;
+
+}
+
+
+p{
+    
+    font-family: outfit-400;
+}
+
+
+h2{
+    font-family: younf-serif;
+    color: var(--Brown-800);
+}
+
+h3{
+    font-family: outfit-400;
+    color: var(--Rose-800);
+}
+
+article{
+    margin:0 auto;
+    padding:2rem;
+    width: 50vw;
+    background-color: var(--White);
+}
+
+img{
+    width: 100%;
+    border-radius: 10px;
+}
+li{
+     padding-left: 1rem
+}
+
+.preptime{
+    background-color: var(--Rose-50);
+    padding: 1rem 2em;
+    border-radius:10px;
+}
+
+.preptime li::marker{
+      font-family: outfit-400;
+    color:var(--Rose-800);
+    
+    
+}
+
+.ingredients li::marker , .instructions li::marker{
+    font-family: outfit-400;
+    color:var(--Brown-800);
+    font-weight: 700;
+    
+}
+
+table  {
+    width: 100%;
+  
+  border-collapse: collapse;
+}
+
+
+tr{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  
+    border-bottom: 1px solid var(--Stone-150);
+}
+
+tr:last-child{
+    
+    border-bottom: none;
+}
+
+
+td{
+    padding: 0.5rem 1.5rem
+}
+[data-cell="value"] {
+    color: var(--Brown-800);
+    font-family: outfit-600;
+}
+
+[data-cell="type"] {
+   
+    font-family: outfit-400;
+    font-weight: 200;
+    color:var(--Stone-600);
+}
+
+@media screen and (max-width: 600px) {
+  /* :root {
+    font-size:10px
+  } */
+
+ body{
+        padding:0px;
+        outline:1px red solid;
+        margin: 0px;
+    }
+  article{
+    width: 100%;
+    padding: 0px;
+    outline: 1px red solid;
+  }
+
+  section{
+    margin:2rem;
+  }
+
+  img{
+    border-radius: 0;
+
+  }
+}
